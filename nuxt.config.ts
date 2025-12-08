@@ -11,7 +11,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Fazenda dos Goldens - Criação de Golden Retrievers em Formiga, MG',
+      title: 'Goldens da Chácara - Criação de Golden Retrievers em Formiga, MG',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -19,7 +19,7 @@ export default defineNuxtConfig({
           name: 'description',
           content: 'Criação responsável de Golden Retrievers em Formiga, Minas Gerais. Filhotes saudáveis e socializados.'
         },
-        { property: 'og:title', content: 'Fazenda dos Goldens - Criação de Golden Retrievers' },
+        { property: 'og:title', content: 'Goldens da Chácara - Criação de Golden Retrievers' },
         { property: 'og:description', content: 'Criação responsável de Golden Retrievers em Formiga, MG' },
         { property: 'og:type', content: 'website' }
       ],

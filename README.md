@@ -1,4 +1,4 @@
-# 🐾 Fazenda dos Goldens
+# 🐾 Goldens da Chácara
 
 Criação responsável e ética de Golden Retrievers em Formiga – MG, focada em saúde, bem-estar, socialização e temperamento equilibrado. Filhotes criados em ambiente familiar, com acompanhamento contínuo e seleção criteriosa dos pais.
 

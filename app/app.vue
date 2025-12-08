@@ -12,7 +12,7 @@ useHead({
   }
 })
 
-const title = 'Fazenda dos Goldens'
+const title = 'Goldens da Chácara'
 const description = 'Venda de Golden Retrievers em Formiga, MG'
 
 useSeoMeta({

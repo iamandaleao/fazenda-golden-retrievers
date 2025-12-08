@@ -48,7 +48,7 @@
             excelente temperamento (como o do Lars!), saúde comprovada e conformação ao padrão da raça.
           </p>
           <p class="text-sm sm:text-base text-gray-600">
-            Nossa fazenda em Formiga, MG, oferece o ambiente perfeito para que os filhotes cresçam em
+            Nossa chácara em Formiga, MG, oferece o ambiente perfeito para que os filhotes cresçam em
             contato com a natureza, recebendo socialização adequada e todos os cuidados necessários.
           </p>
         </div>

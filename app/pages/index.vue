@@ -23,7 +23,7 @@
 <script setup>
 // SEO
 useHead({
-  title: 'Fazenda dos Goldens - Criação de Golden Retrievers em Formiga, MG',
+  title: 'Goldens da Chácara - Criação de Golden Retrievers em Formiga, MG',
   meta: [
     {
       name: 'description',
@@ -33,7 +33,7 @@ useHead({
       name: 'keywords',
       content: 'golden retriever, criação golden retriever, filhotes golden, golden retriever formiga, golden retriever minas gerais, canil golden retriever'
     },
-    { property: 'og:title', content: 'Fazenda dos Goldens - Criação de Golden Retrievers' },
+    { property: 'og:title', content: 'Goldens da Chácara - Criação de Golden Retrievers' },
     { property: 'og:description', content: 'Criação responsável de Golden Retrievers em Formiga, MG' },
     { property: 'og:type', content: 'website' }
   ]

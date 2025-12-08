@@ -5,7 +5,7 @@
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         <div>
           <h3 class="text-xl sm:text-2xl font-bold text-amber-400 mb-3 sm:mb-4">
-            Fazenda dos Goldens
+            Goldens da Chácara
           </h3>
           <p class="text-sm sm:text-base text-gray-400">
             Criação responsável de Golden Retrievers em Formiga, Minas Gerais.
@@ -66,12 +66,12 @@
                 :size="18"
                 class="flex-shrink-0"
               />
-              <span class="break-all">contato@goldenfarm.com.br</span>
+              <span class="break-all">goldensdachacara@gmail.com</span>
             </li>
           </ul>
           <div class="flex gap-4 mt-4">
             <a
-              href="#"
+              href="https://instagram.com/goldensdachacara"
               class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition"
               aria-label="Instagram"
             >
@@ -88,8 +88,12 @@
         </div>
       </div>
       <div class="border-t border-gray-800 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-xs sm:text-sm text-gray-400">
-        <p>&copy; 2025 Fazenda dos Goldens. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Goldens da Chácara. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
 </template>
+
+<script setup>
+  import{Mail, Instagram, Facebook} from 'lucide-vue-next'
+</script>
