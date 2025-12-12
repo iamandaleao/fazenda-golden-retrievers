@@ -7,8 +7,9 @@ export default defineNuxtConfig({
   ],
 
   content: {
-    // evita o uso do better-sqlite3
-    driver: 'memory'
+    experimental: {
+      nativeSqlite: true,
+    },
   },
 
   devtools: {
