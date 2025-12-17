@@ -10,32 +10,32 @@
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex space-x-6 lg:space-x-8">
-          <a
-            href="#home"
+          <NuxtLink
+            href="/#home"
             class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
-          >Home</a>
-          <a
-            href="#sobre"
+          >Home</NuxtLink>
+          <NuxtLink
+            href="/#sobre"
             class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
-          >Nossa História</a>
-          <a
-            href="#raca"
+          >Nossa História</NuxtLink>
+          <NuxtLink
+            href="/#raca"
             class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
-          >A Raça</a>
-          <a
-            href="#valores"
+          >A Raça</NuxtLink>
+          <NuxtLink
+            href="/#valores"
             class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
-          >Valores</a>
-          <a
-            href="#contato"
+          >Valores</NuxtLink>
+          <NuxtLink
+            href="/#contato"
             class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
-          >Contato</a>
+          >Contato</NuxtLink>
 
           <!-- Blog -->
-          <a
-            href="#blog"
+          <NuxtLink
+            href="/blog"
             class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
-          >Blog</a>
+          >Blog</NuxtLink>
         </div>
 
         <!-- Mobile menu button -->
@@ -62,38 +62,38 @@
       class="md:hidden bg-white border-t"
     >
       <div class="px-4 pt-2 pb-3 space-y-1">
-        <a
-          href="#home"
+        <NuxtLink
+          href="/#home"
           class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
           @click="mobileMenuOpen = false"
-        >Home</a>
-        <a
-          href="#sobre"
+        >Home</NuxtLink>
+        <NuxtLink
+          href="/#sobre"
           class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
           @click="mobileMenuOpen = false"
-        >Nossa História</a>
-        <a
-          href="#raca"
+        >Nossa História</NuxtLink>
+        <NuxtLink
+          href="/#raca"
           class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
           @click="mobileMenuOpen = false"
-        >A Raça</a>
-        <a
-          href="#valores"
+        >A Raça</NuxtLink>
+        <NuxtLink
+          href="/#valores"
           class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
           @click="mobileMenuOpen = false"
-        >Valores</a>
-        <a
-          href="#contato"
+        >Valores</NuxtLink>
+        <NuxtLink
+          href="/#contato"
           class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
           @click="mobileMenuOpen = false"
-        >Contato</a>
+        >Contato</NuxtLink>
 
         <!-- Blog -->
-        <a
-          href="#blog"
+        <NuxtLink
+          href="/blog"
           class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
           @click="mobileMenuOpen = false"
-        >Blog</a>
+        >Blog</NuxtLink>
       </div>
     </div>
   </nav>
