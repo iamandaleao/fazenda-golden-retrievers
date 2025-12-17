@@ -2,7 +2,7 @@
   <!-- Sobre a Raça -->
   <section
     id="raca"
-    class="py-12 sm:py-16 bg-gray-50"
+    class="py-12 sm:py-16 bg-gray-50 scroll-mt-4"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-8 sm:mb-12">

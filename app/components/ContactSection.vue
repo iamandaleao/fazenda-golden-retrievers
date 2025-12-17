@@ -2,7 +2,7 @@
   <!-- Call to Action -->
   <section
     id="contato"
-    class="py-12 sm:py-16 bg-gradient-to-br from-amber-500 to-orange-500 text-white"
+    class="py-12 sm:py-16 bg-gradient-to-br from-amber-500 to-orange-500 text-white scroll-mt-4"
   >
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
