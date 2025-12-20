@@ -1,3 +1,63 @@
+<script setup lang="ts">
+import type { AccordionItem } from '@nuxt/ui'
+
+const goldenRetrieverItems: AccordionItem[] = [
+  {
+    label: 'Quando terão filhotes disponíveis?',
+    content: 'Estamos atualmente na fase de aquisição dos matrizes. Prevemos nossa primeira ninhada para os próximos meses. Entre em contato pelo WhatsApp para receber atualizações!',
+  },
+  {
+    label: 'Qual o valor estimado dos filhotes?',
+    content: 'Os valores serão divulgados assim que tivermos os matrizes definidos e toda a estrutura pronta. Trabalhamos com preços justos que refletem a qualidade e cuidados oferecidos.',
+  },
+  {
+    label: 'Fazem reservas antecipadas?',
+    content: 'Sim! Você pode manifestar interesse agora pelo WhatsApp e quando a ninhada for confirmada, entraremos em contato para formalizar a reserva.',
+  },
+  {
+    label: 'Que documentação será fornecida?',
+    content: 'Todos os filhotes sairão com pedigree, carteira de vacinação, vermifugação em dia, e orientações completas de cuidados. Nota fiscal disponível mediante solicitação.',
+  },
+  {
+    label: 'Oferecem suporte pós-adoção?',
+    content: 'Sim! Estaremos sempre disponíveis para orientar sobre alimentação, saúde, comportamento e quaisquer dúvidas que surgirem ao longo da vida do seu Golden.',
+  },
+]
+
+const hotelCaninoItems: AccordionItem[] = [
+  {
+    label: 'Aceita cachorros de todas as raças e tamanhos?',
+    content: 'Sim! Recebemos cães de todas as raças e portes com muito carinho. Nosso espaço é amplo e adequado para garantir o conforto de todos os hóspedes.',
+  },
+  {
+    label: 'Quais vacinas são obrigatórias para hospedar?',
+    content: 'Não exigimos carteira de vacinação, porém recomendamos fortemente que seu pet esteja com as vacinas em dia (V10/V8 e antirrábica) para a própria segurança e saúde dele.',
+  },
+  {
+    label: 'Aceita cadelas no cio?',
+    content: 'Sim. Elas ficam em área separada dos machos para evitar qualquer desconforto e garantir a tranquilidade de todos os hóspedes.',
+  },
+  {
+    label: 'Como é a rotina diária dos cães hospedados?',
+    content: 'Nossos hóspedes têm uma rotina equilibrada com alimentação em horários regulares, momentos de brincadeiras e socialização em áreas seguras, períodos de descanso e muito carinho. Cães com necessidades especiais recebem atenção individualizada.',
+  },
+  {
+    label: 'Qual o valor da diária?',
+    slot: 'diaria',
+    content: 'A diária é de R$ 50,00 por cachorro, incluindo alimentação, cuidados e acomodação confortável. Entre em contato para conhecer nossos pacotes especiais!',
+  },
+  {
+    label: 'Tem desconto para hospedagens longas?',
+    slot: 'desconto',
+    content: 'Sim! Oferecemos descontos progressivos para estadias prolongadas.',
+  },
+  {
+    label: 'O que está incluso na diária?',
+    content: 'A diária inclui: acomodação confortável e segura, água fresca sempre disponível, socialização com outros cães, brincadeiras monitoradas, limpeza diária do espaço e cuidados básicos. Traga a ração de costume do seu pet. Banhos e tosas podem ser agendados à parte.',
+  },
+]
+</script>
+
 <template>
   <!-- FAQ -->
   <section class="py-12 sm:py-16 bg-gray-50">
@@ -14,53 +74,15 @@
         <h3 class="text-xl sm:text-2xl font-bold text-amber-700 mb-4 sm:mb-6 flex items-center gap-2">
           🐕 Sobre os Golden Retrievers
         </h3>
-        <div class="space-y-4 sm:space-y-6">
-          <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
-            <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-2">
-              Quando terão filhotes disponíveis?
-            </h4>
-            <p class="text-sm sm:text-base text-gray-600">
-              Estamos atualmente na fase de aquisição dos matrizes. Prevemos nossa primeira ninhada
-              para os próximos meses. Entre em contato pelo WhatsApp para receber atualizações!
-            </p>
-          </div>
-          <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
-            <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-2">
-              Qual o valor estimado dos filhotes?
-            </h4>
-            <p class="text-sm sm:text-base text-gray-600">
-              Os valores serão divulgados assim que tivermos os matrizes definidos e toda a estrutura pronta.
-              Trabalhamos com preços justos que refletem a qualidade e cuidados oferecidos.
-            </p>
-          </div>
-          <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
-            <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-2">
-              Fazem reservas antecipadas?
-            </h4>
-            <p class="text-sm sm:text-base text-gray-600">
-              Sim! Você pode manifestar interesse agora pelo WhatsApp e quando a ninhada for confirmada,
-              entraremos em contato para formalizar a reserva.
-            </p>
-          </div>
-          <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
-            <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-2">
-              Que documentação será fornecida?
-            </h4>
-            <p class="text-sm sm:text-base text-gray-600">
-              Todos os filhotes sairão com pedigree, carteira de vacinação, vermifugação em dia,
-              e orientações completas de cuidados. Nota fiscal disponível mediante solicitação.
-            </p>
-          </div>
-          <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
-            <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-2">
-              Oferecem suporte pós-adoção?
-            </h4>
-            <p class="text-sm sm:text-base text-gray-600">
-              Sim! Estaremos sempre disponíveis para orientar sobre alimentação, saúde, comportamento
-              e quaisquer dúvidas que surgirem ao longo da vida do seu Golden.
-            </p>
-          </div>
-        </div>
+        <UAccordion
+          :items="goldenRetrieverItems"
+          :ui="{
+            root: 'space-y-4 sm:space-y-6',
+            item: 'bg-white rounded-xl shadow-sm border-0',
+            trigger: 'text-base sm:text-lg font-bold text-gray-900 px-5 sm:px-6 py-3.5',
+            body: 'text-sm sm:text-base text-gray-600 px-5 sm:px-6 pb-5 sm:pb-6',
+          }"
+        />
       </div>
 
       <!-- Seção: Hotel Canino -->
@@ -68,80 +90,36 @@
         <h3 class="text-xl sm:text-2xl font-bold text-amber-700 mb-4 sm:mb-6 flex items-center gap-2">
           🏨 Sobre o Hotel Canino
         </h3>
-        <div class="space-y-4 sm:space-y-6">
-          <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
-            <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-2">
-              Aceita cachorros de todas as raças e tamanhos?
-            </h4>
-            <p class="text-sm sm:text-base text-gray-600">
-              Sim! Recebemos cães de todas as raças e portes com muito carinho. Nosso espaço é amplo
-              e adequado para garantir o conforto de todos os hóspedes.
-            </p>
-          </div>
-          <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
-            <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-2">
-              Quais vacinas são obrigatórias para hospedar?
-            </h4>
-            <p class="text-sm sm:text-base text-gray-600">
-              Não exigimos carteira de vacinação, porém recomendamos fortemente que seu pet esteja
-              com as vacinas em dia (V10/V8 e antirrábica) para a própria segurança e saúde dele.
-            </p>
-          </div>
-          <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
-            <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-2">
-              Aceita cadelas no cio?
-            </h4>
-            <p class="text-sm sm:text-base text-gray-600">
-              Sim. Elas ficam em área separada dos machos para evitar
-              qualquer desconforto e garantir a tranquilidade de todos os hóspedes.
-            </p>
-          </div>
-          <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
-            <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-2">
-              Como é a rotina diária dos cães hospedados?
-            </h4>
-            <p class="text-sm sm:text-base text-gray-600">
-              Nossos hóspedes têm uma rotina equilibrada com alimentação em horários regulares,
-              momentos de brincadeiras e socialização em áreas seguras, períodos de descanso
-              e muito carinho. Cães com necessidades especiais recebem atenção individualizada.
-            </p>
-          </div>
-          <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
-            <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-2">
-              Qual o valor da diária?
-            </h4>
+        <UAccordion
+          :items="hotelCaninoItems"
+          :ui="{
+            root: 'space-y-4 sm:space-y-6',
+            item: 'bg-white rounded-xl shadow-sm border-0',
+            trigger: 'text-base sm:text-lg font-bold text-gray-900 px-5 sm:px-6 py-3.5',
+            body: 'text-sm sm:text-base text-gray-600 px-5 sm:px-6 pb-5 sm:pb-6',
+          }"
+        >
+          <template #diaria-body="{ item }">
             <p class="text-sm sm:text-base text-gray-600">
               A diária é de <span class="font-bold text-amber-600">R$ 50,00</span> por cachorro,
               incluindo alimentação, cuidados e acomodação confortável. Entre em contato para
               conhecer nossos pacotes especiais!
             </p>
-          </div>
-          <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
-            <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-2">
-              Tem desconto para hospedagens longas?
-            </h4>
-            <p class="text-sm sm:text-base text-gray-600">
+          </template>
+          <template #desconto-body="{ item }">
+            <p class="text-sm sm:text-base text-gray-600 mb-2">
               Sim! Oferecemos descontos progressivos para estadias prolongadas:
-              <ul class="list-disc list-inside">
-                <li class="font-semibold">7 dias ou mais = 10% de desconto</li> 
-                <li class="font-semibold">15 dias ou mais = 15% de desconto</li> 
-                <li class="font-semibold">30 dias ou mais = 20% de desconto</li>
-              </ul>
+            </p>
+            <ul class="list-disc list-inside text-sm sm:text-base text-gray-600">
+              <li class="font-semibold">7 dias ou mais = 10% de desconto</li>
+              <li class="font-semibold">15 dias ou mais = 15% de desconto</li>
+              <li class="font-semibold">30 dias ou mais = 20% de desconto</li>
+            </ul>
+            <p class="text-sm sm:text-base text-gray-600 mt-2">
               Entre em contato para condições especiais!
             </p>
-          </div>
-          <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
-            <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-2">
-              O que está incluso na diária?
-            </h4>
-            <p class="text-sm sm:text-base text-gray-600">
-              A diária inclui: acomodação confortável e segura, água fresca sempre disponível,
-              socialização com outros cães, brincadeiras monitoradas, limpeza diária do espaço
-              e cuidados básicos. Traga a ração de costume do seu pet. Banhos e tosas podem ser
-              agendados à parte.
-            </p>
-          </div>
-        </div>
+          </template>
+        </UAccordion>
       </div>
     </div>
   </section>
