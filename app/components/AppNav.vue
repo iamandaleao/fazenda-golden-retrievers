@@ -27,6 +27,10 @@
             class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
           >Valores</NuxtLink>
           <NuxtLink
+            href="/#hotelpet"
+            class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
+          >Hotel Pet</NuxtLink>
+          <NuxtLink
             href="/#contato"
             class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
           >Contato</NuxtLink>
@@ -82,6 +86,11 @@
           class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
           @click="mobileMenuOpen = false"
         >Valores</NuxtLink>
+        <NuxtLink
+          href="/#hotelpet"
+          class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
+          @click="mobileMenuOpen = false"
+        >Hotel Pet</NuxtLink>
         <NuxtLink
           href="/#contato"
           class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
