@@ -10,6 +10,8 @@
 
     <AboutGoldenSection />
 
+    <HotelSection />
+
     <OurValuesSection />
 
     <FaqSection />
