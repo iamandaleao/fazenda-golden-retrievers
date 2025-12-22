@@ -9,8 +9,9 @@
           🐕 Filhotes disponíveis em breve!
         </div>
 
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 px-4">
-          Criação de <span class="text-amber-600">Golden Retrievers</span> <br> e Hotel para Cães
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2 sm:mb-4 px-4">
+          Criação de <span class="text-amber-500">Golden Retrievers</span><br>
+          e <span class="text-blue-500">Hotel para Cães</span>
         </h1>
 
         <p class="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto px-4">

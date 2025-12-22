@@ -15,7 +15,7 @@
       <!-- História do Lars -->
       <div class="grid lg:grid-cols-2 gap-4 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 sm:p-8 lg:p-12 mb-8 sm:mb-12">
         <img
-          src="/images/golden-retriever-canil-chacara.jpg"
+          src="/images/golden-retriever-canil-chacara-hotel-pet.jpg"
           alt=""
           class="rounded-xl h-96 place-self-center order-2 lg:order-1"
         >
