@@ -5,7 +5,12 @@
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         <div>
           <h3 class="text-xl sm:text-2xl font-bold text-amber-400 mb-3 sm:mb-4">
-            Goldens da Chácara
+            <a
+              href="/"
+              class="hover:underline"
+            >
+              Goldens da Chácara
+            </a>
           </h3>
           <p class="text-sm sm:text-base text-gray-400 mb-2">
             Criação profissional de Golden Retrievers e hospedagem para seu pet.
@@ -20,9 +25,17 @@
               :size="18"
               class="flex-shrink-0 mt-0.5"
             />
-            <address class="not-italic">Ao lado do condomínio Ideal e laticínio Ideal, Formiga, Minas Gerais</address>
+            <address class="not-italic inline">
+              Ao lado do condomínio Ideal e laticínio Ideal, Formiga, Minas Gerais
+              <ExternalLink
+                :size="18"
+                class="inline-block align-middle ml-1"
+              />
+            </address>
           </a>
         </div>
+
+        <!-- Links Rápidos -->
         <div>
           <h4 class="font-bold mb-3 sm:mb-4 text-base sm:text-lg">
             Links Rápidos
@@ -30,50 +43,65 @@
           <ul class="space-y-2 text-sm sm:text-base text-gray-400">
             <li>
               <a
-                href="#home"
+                href="#hotel-pet"
                 class="hover:text-amber-400 transition"
-              >Home</a>
-            </li>
-            <li>
-              <a
-                href="#sobre"
-                class="hover:text-amber-400 transition"
-              >Nossa História</a>
-            </li>
-            <li>
-              <a
-                href="#raca"
-                class="hover:text-amber-400 transition"
-              >A Raça</a>
+              >
+                Hotel Pet
+              </a>
             </li>
             <li>
               <a
                 href="#contato"
                 class="hover:text-amber-400 transition"
-              >Contato</a>
+              >
+                Contato
+              </a>
+            </li>
+            <li>
+              <a
+                href="/blog"
+                class="hover:text-amber-400 transition"
+              >
+                Blog
+              </a>
             </li>
           </ul>
         </div>
+
+        <!-- Contato -->
         <div class="sm:col-span-2 lg:col-span-1">
           <h4 class="font-bold mb-3 sm:mb-4 text-base sm:text-lg">
             Contato
           </h4>
           <ul class="space-y-3 text-sm sm:text-base text-gray-400">
-            <li class="flex items-center gap-2">
-              <Phone
-                :size="18"
-                class="flex-shrink-0"
-              />
-              <span>(47) 99161-1628</span>
+            <li>
+              <a
+                href="https://wa.me/5547991611628"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 hover:text-amber-400 transition"
+              >
+                <Phone
+                  :size="18"
+                  class="flex-shrink-0"
+                />
+                <span>(47) 99161-1628</span>
+              </a>
             </li>
-            <li class="flex items-center gap-2">
-              <Mail
-                :size="18"
-                class="flex-shrink-0"
-              />
-              <span class="break-all">goldensdachacara@gmail.com</span>
+            <li>
+              <a
+                href="mailto:goldensdachacara@gmail.com"
+                class="flex items-center gap-2 hover:text-amber-400 transition"
+              >
+                <Mail
+                  :size="18"
+                  class="flex-shrink-0"
+                />
+                <span class="break-all">goldensdachacara@gmail.com</span>
+              </a>
             </li>
           </ul>
+
           <div class="flex gap-4 mt-4">
             <a
               href="https://instagram.com/goldensdachacara"
@@ -94,6 +122,7 @@
           </div>
         </div>
       </div>
+
       <div class="border-t border-gray-800 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-xs sm:text-sm text-gray-400">
         <p>&copy; 2025 Goldens da Chácara. Todos os direitos reservados.</p>
       </div>
@@ -102,5 +131,5 @@
 </template>
 
 <script setup>
-import { MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-vue-next'
+import { MapPin, Phone, Mail, ExternalLink, Instagram, Facebook } from 'lucide-vue-next'
 </script>
