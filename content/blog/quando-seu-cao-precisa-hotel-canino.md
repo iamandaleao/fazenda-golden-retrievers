@@ -1,7 +1,7 @@
 ---
 title: "Sinais de que seu cão precisa de um hotel canino"
 description: "Descubra as situações em que a hospedagem profissional é a melhor opção para o bem-estar e segurança do seu pet."
-image: "https://placedog.net/800/600?id=7"
+image: "https://placedog.net/800/600?id=9"
 tip: "Planeje a hospedagem com antecedência sempre que possível. Uma visita prévia ao local ajuda seu cão a se familiarizar com o ambiente e reduz a ansiedade na hora da estadia."
 ---
 
