@@ -1,10 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/ui',
-    '@nuxt/content'
-  ],
+  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/content', 'nuxt-gtag'],
 
   devtools: {
     enabled: true
@@ -53,5 +49,9 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  gtag: {
+    id: 'G-W4RRNKNZTS'
   }
 })
