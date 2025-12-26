@@ -21,7 +21,7 @@
     </div>
 
     <!-- Título -->
-    <h1 class="text-5xl font-bold text-gray-900 mb-4">
+    <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
       {{ post.title }}
     </h1>
 
