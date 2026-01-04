@@ -37,7 +37,7 @@
 
           <!-- Novo botão Blog -->
           <a
-            href="#blog"
+            href="blog"
             class="bg-white text-blue-600 px-6 sm:px-8 py-3 rounded-lg font-semibold border-2 border-blue-600 hover:bg-blue-50 transition"
           >
             Leia Nosso Blog
