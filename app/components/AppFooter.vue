@@ -124,7 +124,7 @@
       </div>
 
       <div class="border-t border-gray-800 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-xs sm:text-sm text-gray-400">
-        <p>&copy; 2025 Goldens da Chácara. Todos os direitos reservados.</p>
+        <p>&copy; {{ currentYear }} Goldens da Chácara. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
@@ -132,4 +132,6 @@
 
 <script setup>
 import { MapPin, Phone, Mail, ExternalLink, Instagram, Facebook } from 'lucide-vue-next'
+
+const currentYear = new Date().getFullYear()
 </script>
